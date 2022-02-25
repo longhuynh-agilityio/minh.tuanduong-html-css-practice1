@@ -1,0 +1,113 @@
+.plan{
+	min-height: 100vh;
+	background: #4B4B4B;
+	padding: 0 9%;
+	padding-top: 6.5rem;
+}
+
+.plan .heading{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 10px; 
+	margin-bottom: 25px;
+	color: #ffffff;
+}
+
+.plan .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+	flex: 1 1 200px;
+	margin: 20px 10px;
+	padding: 1rem;
+	box-shadow: 0 .6rem 1rem rgba(0,0,0,.5);
+	border-radius: 8px;
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.plan .box-container .box:nth-child(1){
+	background: linear-gradient(225deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
+}
+
+.plan .box-container .box:nth-child(1) .title{
+	color: #EBCB80;
+}
+
+.plan .box-container .box:nth-child(1) .price,
+.plan .box-container .box:nth-child(1) .year,
+.plan .box-container .box:nth-child(1) ul{
+	color: #ffffff;
+}
+
+.plan .box-container .box:nth-child(2){
+	 background: #EBCB80;
+}
+
+.plan .box-container .box:nth-child(2) .btn-p{
+	background: #4B4B4B;
+	color: #FFFFFF;
+}
+
+.plan .box-container .box:last-child{
+	background: linear-gradient(223.49deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
+}
+
+.plan .box-container .box:last-child .title{
+	color: #EBCB80;
+}
+
+.plan .box-container .box:last-child .price,
+.plan .box-container .box:last-child .year,
+.plan .box-container .box:last-child ul{
+	color: #ffffff;
+}
+
+
+.plan .box-container .box ul{
+	padding: 1rem 0;
+	list-style: none;
+}
+
+.plan .btn-p{
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 15px;
+	/*margin-bottom: 8px;*/
+	padding: 5px 30px;
+	border-radius: 50px;
+	background:#EBCB80;
+	font-size: 14px;
+	cursor: pointer;
+	color: #4B4B4B;
+}
+
+.plan .box-container .box .title{
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.plan .box-container .box .price sup{
+	font-size: 20px;
+	padding-right: 3px;
+}
+
+.plan .box-container .box .price{
+	font-size: 47px;
+}
+
+.plan .box-container .box li{
+	font-size: 13px;
+	padding: 4px 0;
+}
+
+.plan .box-container .box .year{
+	font-size: 18px;
+	text-transform: uppercase;
+}
