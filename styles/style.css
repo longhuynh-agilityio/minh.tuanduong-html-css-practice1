@@ -333,3 +333,75 @@ section .content .find{
 }
 
 
+/*Account*/
+.account{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 540px;
+	background: url(../images/mask.png)
+}
+
+.account form{
+	text-align: center;
+	padding: 30px 30px;
+	border-radius: 8px;
+	/*width:340px;*/
+	background: #4B4B4B;
+	
+}
+
+.content .heading{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 36px;
+}
+
+.content .title{
+	text-align: center;
+	color: #EBCB80;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.content .inputBox{
+	opacity: 0.8;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	height: 36px;
+	/*width: 100px;*/
+	margin: 20px 10px;
+}
+
+.content .inputBox input{
+	padding: 6px 76px 6px 15px;
+	font-size: 14px;
+}
+
+.content a{
+	text-align: center;
+	color: #EBCB80;
+	font-size: 13px;
+}
+
+.account .content .sign{
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+.btn-a{
+	padding: 7px 50px;
+	margin-top: 18px;
+	border-width: 180px;
+	border-top: 180px;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	background: #EBCB80;
+	color: #4B4B4B;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
