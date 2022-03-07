@@ -1,26 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
-*{
-	font-family: 'Poppins', sans-serif;
-	margin: 0; padding: 0;
-	box-sizing: border-box;
-	/*text-decoration: none;*/
-	outline: none;border: none;
-	text-transform: capitalize;
-}
-
-html{
-	font-size: 62.5%;
-	overflow-x: hidden;
-}
-
-body{
-	background:#ffffff;
-}
 
 /*Header*/
 header{
-	/*position: absolute;*/
 	top:0; left: 0;
 	width: 100%;
 	background:url(../images/nav-bg.png);
@@ -45,16 +27,16 @@ header .navbar a{
 	text-decoration: none;
 	font-size: 17px;
 	margin-left: 20px;
-	color: #ffffff;
+	color: #FFF;
 	text-transform: uppercase;
 }
 
-.btn{
+header .take-tour-btn{
 	padding: 9px 30px;
 	margin-top: 10px;
 	border-width: 180px;
 	border-top: 180px;
-	border: 2px solid #ffffff;
+	border: 2px solid #FFF;
 	border-radius: 50px;
 }
 
@@ -62,21 +44,21 @@ header .navbar a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../images/background.png);
+	background-image: url(../images/background.jpg);
 	background-size: cover;
 }
 
-section .content h1{
+.home .content h1{
 	font-size: 40px;
 }
 
-section .content p{
+.home .content p{
 	margin-top: 10px;
 	font-size: 15px;
 	text-align: center;
 }
 
-section .content .find{
+.home .content .find{
 	margin-top: 35px;
 	text-align:center;
 }
@@ -84,23 +66,25 @@ section .content .find{
 .find input[type="email"]{
 	padding: 10px;
 	font-size: 15px;
-	/*background:none;*/
-	width: 300px;
-	/*color: #fff;*/
+	width: 280px;
 	text-transform: none;
 	border: 1px solid #4B4B4B;
 	border-radius: 4px; 
 	margin-right: 15px;
+	background-color: transparent;
 }
 
-.find input[type="submit"]{
+.find .find-now-btn{
 	text-transform: uppercase;
+	text-decoration: none;
 	border: 2px solid #4B4B4B;
-	padding: 7px;
-	width: 170px;
+	padding: 7px 50px;
 	font-size: 16px;
 	border-radius: 50px;
 	cursor: pointer;
+	color: #4B4B4B;
+	background-color: transparent;
+
 }
 
 .content .icon{
@@ -114,7 +98,7 @@ section .content .find{
 
 /*Team*/
 .team{
-	min-height: 550px;
+	min-height: 90vh;
 }
 .team .heading{
 	font-size: 44px;
@@ -134,7 +118,7 @@ section .content .find{
 
 .team .box-container .box{
 	height: 170px;
-	background: #ffffff;
+	background: #FFF;
 	margin: 30px 10px 30px 20px;
 	padding: 20px;
 	padding-left: 30px;
@@ -158,7 +142,6 @@ section .content .find{
 }
 
 .person img{
-	/*float: left;*/
 	margin-right: 20px;
 }
 
@@ -176,7 +159,7 @@ section .content .find{
 	text-align: center;
 	margin-top: 10px; 
 	margin-bottom: 25px;
-	color: #ffffff;
+	color: #FFF;
 }
 
 .plan .box-container{
@@ -207,16 +190,16 @@ section .content .find{
 .plan .box-container .box:nth-child(1) .price,
 .plan .box-container .box:nth-child(1) .year,
 .plan .box-container .box:nth-child(1) ul{
-	color: #ffffff;
+	color: #FFF;
 }
 
 .plan .box-container .box:nth-child(2){
 	 background: #EBCB80;
 }
 
-.plan .box-container .box:nth-child(2) .btn-p{
+.plan .box-container .box:nth-child(2) .purchase-btn{
 	background: #4B4B4B;
-	color: #FFFFFF;
+	color: #FFF;
 }
 
 .plan .box-container .box:last-child{
@@ -230,27 +213,26 @@ section .content .find{
 .plan .box-container .box:last-child .price,
 .plan .box-container .box:last-child .year,
 .plan .box-container .box:last-child ul{
-	color: #ffffff;
+	color: #FFF;
 }
 
 
 .plan .box-container .box ul{
 	padding: 10px 0;
-	list-style: none;
 }
 
-.plan .btn-p{
+.plan .purchase-btn{
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
 	margin-top: 15px;
-	/*margin-bottom: 8px;*/
 	padding: 5px 30px;
 	border-radius: 50px;
 	background:#EBCB80;
 	font-size: 14px;
 	cursor: pointer;
 	color: #4B4B4B;
+	transition: all .3s linear;
 }
 
 .plan .box-container .box .title{
@@ -282,7 +264,7 @@ section .content .find{
 
 /*Place*/
 .place{
-	min-height: 123vh;
+	min-height: 127vh;
 	padding: 0 100px;
 }
 
@@ -305,31 +287,20 @@ section .content .find{
 }
 
 .place .box-container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 10px;
+	padding: 20px;
 }
 
-.place .box-container .box-up{
+.place .box-container .box{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin: 6px;
-	/*border: 5px solid #bababa;*/
-	width: 970px
 }
 
-.place .box-container .box-down{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 6px;
-	/*border: 5px solid #bababa;*/
-	width: 970px
+.place .box-container .box img{
+	margin: 10px;
 }
 
 
@@ -346,14 +317,13 @@ section .content .find{
 	text-align: center;
 	padding: 30px 30px;
 	border-radius: 8px;
-	/*width:340px;*/
 	background: #4B4B4B;
 	
 }
 
 .content .heading{
 	text-align: center;
-	color: #fff;
+	color: #FFF;
 	font-size: 30px;
 	margin-top: 50px;
 	margin-bottom: 36px;
@@ -367,16 +337,15 @@ section .content .find{
 	margin-bottom: 15px;
 }
 
-.content .inputBox{
+.content .input-box{
 	opacity: 0.8;
 	border: 1px solid #999999;
 	border-radius: 4px;
 	height: 36px;
-	/*width: 100px;*/
 	margin: 20px 10px;
 }
 
-.content .inputBox input{
+.content .input-box input{
 	padding: 6px 76px 6px 15px;
 	font-size: 14px;
 }
@@ -392,18 +361,18 @@ section .content .find{
 	font-size: 16px;
 }
 
-.btn-a{
+.account .sign_up-btn{
 	padding: 7px 50px;
 	margin-top: 18px;
 	border-width: 180px;
 	border-top: 180px;
-	border: 2px solid #ffffff;
 	border-radius: 50px;
 	background: #EBCB80;
 	color: #4B4B4B;
 	font-size: 16px;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: all .3s linear;
 }
 
 
@@ -417,7 +386,6 @@ section .content .find{
 	color: #4B4B4B;
 	font-size: 30px;
 	margin-top: 70px;
-	/*margin-bottom: 20px;*/
 }
 
 .contact .box-container{
@@ -436,21 +404,21 @@ section .content .find{
 	margin: 20px;
 }
 
-.contact .info p{
-	margin-left: 10px;
-}
-
 .contact .info .image-email{
 	margin-left: -7px;
 }
 
-.contact .box-container .getIT{
+.contact .box-container .get-in-touch{
 	font-size: 14px;
 	margin-left: 15px;
 }
 
 .contact .box-container .detail{
 	font-size: 12px;
+	margin-left: 10px;
+	font-style: normal;
+	color: #4B4B4B;
+	text-decoration:none;
 }
 
 .contact .box-container .box:nth-child(1){
@@ -460,9 +428,6 @@ section .content .find{
 
 .contact .box-container .box .send{
 	display: flex;
-	/*margin: 10px;*/
-	/*width: 200px;*/
-	/*flex-wrap: wrap;*/
 }
 
 .contact .box-container .box:nth-child(2){
@@ -471,7 +436,6 @@ section .content .find{
 	padding: 20px;
 	width: 480px;
 	margin-top: 50px;
-	/*height: 400px;*/
 }
 
 .contact .box-container .box input,
@@ -485,32 +449,37 @@ section .content .find{
 .contact .box-container .box textarea{
 	width: 100%;
 	resize: none;
-	height: 150px;
+	height: 130px;
 	margin-top: 15px;
 }
 
-.contact .box-container input[type="submit"]{
+.contact .box-container .box .submit-btn{
 	margin-left: 150px;
 	margin-bottom: 10px;
+	margin-top: 10px;
 	background: #EBCB80;
 	border-radius: 50px;
 	padding:8px 50px;
 	text-transform: uppercase;
-
+	cursor: pointer;
+	transition: all .3s linear;
 }
 
+.btn:hover{
+	transform: scale(1.1);
+}
 
-.contact .box-container .inputBox:nth-child(1),
+.contact .box-container .input-box:nth-child(1),
 .contact .box-container .message{
 	margin-left: 30px;
 	margin-right: 15px;
 }
 
-.contact .box-container .inputBox:nth-child(2){
+.contact .box-container .input-box:nth-child(2){
 	margin-right: 30px;
 }
 
-.contact .box-container .inputBox input{
+.contact .box-container .input-box input{
 	padding-right: 15px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -521,9 +490,8 @@ section .content .find{
 }
 
 .contact .box-container .box:last-child{
-	/*padding: 20px;*/
 	width: 200px;
-	margin-top: -110px;
+	margin-top: -1px;
 }
 
 .contact .box-container .box .credits{
@@ -541,27 +509,30 @@ section .content .find{
 	margin-bottom: 18px;
 }
 
-.contact .box-container .box .icon-up{
+.contact .box-container .box .icon{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 160px;
 	margin-bottom: 25px;
+	padding-left: 5px;
 }
 
-.contact .box-container .box .icon-down{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 150px;
+.contact .box-container .box .icon img{
+	margin:15px;
 }
+
+.contact .box-container .box .icon img:nth-child(1),
+.contact .box-container .box .icon img:nth-child(4){
+	margin-left:0;
+}
+
 
 /*Footer*/
 footer{
 	background: #4B4B4B;
 	padding: 40px 140px;
 	min-height: 40vh;
-	color: #FFFFFF;
+	color: #FFF;
 }
 .footer .box-container:nth-child(1){
 	display: flex;
@@ -573,7 +544,6 @@ footer{
 
 .footer .box-container .box:nth-child(1){
 	width: 120px;
-	/*margin-left: 20px;*/
 }
 
 .footer .box-container .box .title{
@@ -585,6 +555,9 @@ footer{
 .footer .box-container .box .content{
 	font-size: 14px;
 	text-transform: none;
+	font-style: normal;
+	color: #FFF;
+	text-decoration: none;
 }
 
 .footer .box-container .box:nth-child(2){
@@ -615,11 +588,15 @@ footer{
 .footer .box-container:nth-child(2) .box:nth-child(2) ul{
 	display: flex;
 	justify-content: space-around;
-	list-style: none;
 	text-transform: uppercase;
 	font-size: 16px;
 	width: 550px;
 	margin-top: -8px;
+	cursor: pointer;
+}
+
+.footer .box-container:nth-child(2) .box:nth-child(2) li:hover{
+	text-decoration: underline;
 }
 
 .footer .box-container:nth-child(2) .box:nth-child(2) li{
