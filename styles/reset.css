@@ -1,20 +1,22 @@
 *{
-	font-family: 'Poppins', sans-serif;
-	margin: 0; padding: 0;
-	box-sizing: border-box;
-	outline: none;border: none;
-	text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-transform: capitalize;
 }
 
 html{
-	font-size: 62.5%;
-	overflow-x: hidden;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-	background:#ffffff;
+    background:#ffffff;
+    line-height: 1.5;
 }
 
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
